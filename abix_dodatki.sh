@@ -28,8 +28,6 @@ b) przerwać pracę instalatora - wówczas naciśnij klawisze CTRL+C
 
 ==========================================================================
 EOF
-echo -n "Czekam na Twoją decyzję...."
-read KKK
-echo " OK, a więc podaj hasło administracyjne (czyli Twoje)...."
+echo "Czekam na Twoją decyzję...."
 sudo ./apt_install.sh
 sudo ./pip3_install.sh
