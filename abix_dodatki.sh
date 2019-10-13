@@ -5,9 +5,11 @@
 #
 # (C) by Adam Jurkiewicz ABIX Edukacja https://abixedukacja.eu
 #
+read K
 DT=`date`
 TMP=`mktemp`
-logger -t abix_dodatki "Instalacja - ${DT}"
+logger -t abix_dodatki "Instalacja - ${DT} - ${TMP}"
+mkdir -p ${TMP}
 cd ${TMP}
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/apt_install.sh
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/pip3_install.sh
