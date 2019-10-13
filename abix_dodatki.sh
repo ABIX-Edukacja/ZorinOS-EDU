@@ -22,13 +22,14 @@ cat << EOF
     Witam serdecznie - tu instalator dodatków edukacyjnych dla ZorinOS
 przygotowany przez Adama Jurkiewicza z firmy ABIX Edukacja. Teraz możesz
 
-a) działać dalej - wówczas naciśnij klawisz ENTER
+a) działać dalej - wówczas podaj hasło i naciśnij klawisz ENTER
 
 b) przerwać pracę instalatora - wówczas naciśnij klawisze CTRL+C
 
 ==========================================================================
 EOF
-read KK
+echo -n "Czekam na Twoją decyzję...."
+read KKK
 echo " OK, a więc podaj hasło administracyjne (czyli Twoje)...."
 sudo ./apt_install.sh
 sudo ./pip3_install.sh
