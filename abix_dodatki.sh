@@ -5,3 +5,4 @@
 #
 # (C) by Adam Jurkiewicz ABIX Edukacja https://abixedukacja.eu
 #
+echo " test"
