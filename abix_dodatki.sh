@@ -5,4 +5,14 @@
 #
 # (C) by Adam Jurkiewicz ABIX Edukacja https://abixedukacja.eu
 #
-echo " test"
+DT=`date`
+TMP=`mktemp`
+logger -t abix_dodatki "Instalacja - ${DT}"
+cd ${TMP}
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/apt_install.sh
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/pip3_install.sh
+chmod +x apt_install.sh
+chmod +x pip3_install.sh
+logger -t abix_dodatki "start instalatora"
+sudo ./apt_install.sh
+sudo ./pip3_install.sh
