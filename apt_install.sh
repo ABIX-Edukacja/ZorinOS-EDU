@@ -10,3 +10,16 @@ apt install -y libcanberra-gtk0 git ar dpkg python3-idle idle-python3.6 idle-pyt
 apt install -y dosemu mp3check cdparanoia aac-enc faac cd-discid python3-matplotlib
 apt install -y python3-dev python-dev hplip-data hplip-gui
 apt --fix-broken install
+
+# Scratch 2 Adobe Air
+dpkg -i adobe-air_amd64.deb
+
+# dodatki ręcznie instalowane
+D=`pwd`
+
+# Ikona PyTechBrain
+cp PyTechBrain.png /usr/share/icons/.
+
+# aplkikacja Scratch2
+cd /opt
+tar xzvf "${D}/_scratch2.tgz"
