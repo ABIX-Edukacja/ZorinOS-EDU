@@ -20,6 +20,12 @@ D=`pwd`
 # Ikona PyTechBrain
 cp PyTechBrain.png /usr/share/icons/.
 
+# Ikona Scratch2
+cp Scratch2.desktop "${HOME}/Pulpit/."
+gio set "$HOME/Pulpit/Scratch2.desktop" "metadata::trusted" yes
+
 # aplkikacja Scratch2
 cd /opt
 tar xzvf "${D}/_scratch2.tgz"
+chown root.root Scratch_2 -R
+chmod +r Scratch_2 -R
