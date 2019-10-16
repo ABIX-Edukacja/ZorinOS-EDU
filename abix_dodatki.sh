@@ -14,6 +14,7 @@ wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/pip3_ins
 # teraz dodatkowe elementy
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/Scratch2.desktop
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2.tgz
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2_appdata.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/PyTechBrain.png
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/adobe-air_amd64.deb
 
@@ -38,7 +39,12 @@ sudo ./apt_install.sh
 sudo ./pip3_install.sh
 
 
-
+cd "${TMP}"
 # Ikona Scratch2
+chmod +x Scratch2.desktop
 cp Scratch2.desktop "${HOME}/Pulpit/."
+
+cd 
+tar xzvf "${TMP}/_scratch2_appdata.tgz"
+
 gio set "$HOME/Pulpit/Scratch2.desktop" "metadata::trusted" yes
