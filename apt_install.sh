@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 #
 # instalacja potrzebnich pakietów
+apt-get update
 apt install -y python3-pip mc openvpn
 apt install -y thunderbird-locale-pl thunderbird-gnome-support
 apt install -y chromium-browser*
