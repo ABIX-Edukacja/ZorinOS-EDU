@@ -12,7 +12,8 @@ cd ${TMP}
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/apt_install.sh
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/pip3_install.sh
 # teraz dodatkowe elementy
-wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/Scratch2.desktop
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_ikony.tgz
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_mu.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2_appdata.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/PyTechBrain.png
@@ -35,16 +36,37 @@ b) przerwać pracę instalatora - wówczas naciśnij klawisze CTRL+C
 ==========================================================================
 EOF
 echo "Czekam na Twoją decyzję...."
-sudo ./apt_install.sh
+sudo ./apt_install.sh ${HOME}
 sudo ./pip3_install.sh
 
+U=`id -un`
+echo "Wracam do mojego usera: ${U}"
 
 cd "${TMP}"
-# Ikona Scratch2
-chmod +x Scratch2.desktop
-cp Scratch2.desktop "${HOME}/Pulpit/."
+# Ikony 
+tar xzvf _ikony.tgz
+LSK=`ls -1 *.desktop`
+for plik in $LSK
+do
+    chmod +x ${plik}
+    cp ${plik} "${HOME}/Pulpit/."
+    gio set "$HOME/Pulpit/${plik}" "metadata::trusted" yes
+done
 
 cd 
 tar xzvf "${TMP}/_scratch2_appdata.tgz"
+tar xzvf "${TMP}/_mu.tgz"
 
-gio set "$HOME/Pulpit/Scratch2.desktop" "metadata::trusted" yes
+
+
+##########
+cat << EOF
+==========================================================================
+
+OK - Koniec, teraz zapisz wszystko, co masz otwarte i zrestartuj komputer.
+
+Powodzenia, Adam Jurkiewicz
+
+==========================================================================
+
+EOF

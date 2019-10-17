@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 #
 # instalacja potrzebnich pakietów
+USER=$1
+#
 apt-get update
 apt install -y python3-pip mc openvpn
 apt install -y thunderbird-locale-pl thunderbird-gnome-support
@@ -22,7 +24,10 @@ D=`pwd`
 
 # Ikona PyTechBrain
 cp PyTechBrain.png /usr/share/icons/.
+cp run_s2aio.sh /usr/local/bin/.
 
+# dodanie usera do grupy dialout dla s2aio
+usermod -a -G dialout ${USER}
 
 # aplkikacja Scratch2
 cd /opt
