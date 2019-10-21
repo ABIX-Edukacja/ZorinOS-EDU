@@ -22,7 +22,6 @@ echo " "
 echo "---[ ERROR ]-----------------------"
 echo "Jeśli to widzisz, to zmaksymalizuj okienko a potem "
 echo "zrób PrintScreen i wyślij do : wsparcie@abixedukacja.eu"
-
+echo "-------"
+echo "klawisz [ENTER] zamknie to okno..."
 read K
-# sleep 15
-# /opt/Scratch\ 2/bin/Scratch\ 2

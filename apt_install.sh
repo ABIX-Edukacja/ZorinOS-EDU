@@ -34,3 +34,7 @@ cd /opt
 tar xzvf "${D}/_scratch2.tgz"
 chown root.root Scratch_2 -R
 chmod +r Scratch_2 -R
+
+tar xzvf "${D}/_ab.tgz"
+chown root.root angrybirds -R
+chmod +r angrybirds -R
