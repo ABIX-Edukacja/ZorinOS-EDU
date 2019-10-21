@@ -23,6 +23,7 @@ echo " Instalacja z katalogu ${D} dla usera: ${USER}."
 # Ikona PyTechBrain
 
 cp PyTechBrain.png /usr/share/icons/.
+chmod +x run_s2aio.sh
 cp run_s2aio.sh /usr/local/bin/.
 
 # dodanie usera do grupy dialout dla s2aio
