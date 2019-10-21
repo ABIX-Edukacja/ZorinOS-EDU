@@ -14,6 +14,7 @@ wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/pip3_ins
 # teraz dodatkowe elementy
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_ikony.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_mu.tgz
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_ab.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2_appdata.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/PyTechBrain.png
