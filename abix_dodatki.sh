@@ -18,6 +18,7 @@ wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_ab.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2_appdata.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/PyTechBrain.png
+wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/run_s2aio.sh
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/adobe-air_amd64.deb
 
 ##### [skrypt] #####################
@@ -44,7 +45,7 @@ U=`id -un`
 echo "Wracam do mojego usera: ${U}"
 
 cd "${TMP}"
-# Ikony 
+# Ikony
 tar xzvf _ikony.tgz
 LSK=`ls -1 *.desktop`
 for plik in $LSK
@@ -54,7 +55,7 @@ do
     gio set "$HOME/Pulpit/${plik}" "metadata::trusted" yes
 done
 
-cd 
+cd
 tar xzvf "${TMP}/_scratch2_appdata.tgz"
 tar xzvf "${TMP}/_mu.tgz"
 
