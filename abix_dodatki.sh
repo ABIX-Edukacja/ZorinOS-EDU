@@ -37,7 +37,7 @@ b) przerwać pracę instalatora - wówczas naciśnij klawisze CTRL+C
 ==========================================================================
 EOF
 echo "Czekam na Twoją decyzję...."
-sudo ./apt_install.sh ${HOME}
+sudo ./apt_install.sh ${USERNAME}
 sudo ./pip3_install.sh
 
 U=`id -un`
