@@ -56,8 +56,8 @@ do
 done
 
 cd
-tar xzvf "${TMP}/_scratch2_appdata.tgz"
-tar xzvf "${TMP}/_mu.tgz"
+tar xzvf "${TMP}/_scratch2_appdata.tgz" > /dev/null 2>>/dev/null
+tar xzvf "${TMP}/_mu.tgz" > /dev/null 2>>/dev/null
 
 
 

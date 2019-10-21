@@ -7,8 +7,8 @@ apt-get update
 apt install -y python3-pip mc openvpn
 apt install -y thunderbird-locale-pl thunderbird-gnome-support
 apt install -y chromium-browser*
-apt install -y libqt4-dev-bin libcanberra-gtk3-module libcanberra-gtk0 git ar dpkg idle-python3.6 
-apt install -y dosemu mp3check cdparanoia aac-enc faac cd-discid 
+apt install -y libqt4-dev-bin libcanberra-gtk3-module libcanberra-gtk0 git ar dpkg idle-python3.6
+apt install -y dosemu mp3check cdparanoia aac-enc faac cd-discid
 apt install -y python3-dev python-dev hplip-data hplip-gui
 
 
@@ -19,8 +19,9 @@ apt --fix-broken install -y
 
 # dodatki ręcznie instalowane
 D=`pwd`
-
+echo " Instalacja z katalogu ${D} dla usera: ${USER}."
 # Ikona PyTechBrain
+
 cp PyTechBrain.png /usr/share/icons/.
 cp run_s2aio.sh /usr/local/bin/.
 
