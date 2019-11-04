@@ -19,7 +19,6 @@ wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/_scratch2_appdata.tgz
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/PyTechBrain.png
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/run_s2aio.sh
-wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/lang_setup.sh
 wget https://raw.githubusercontent.com/ABIX-Edukacja/ZorinOS-EDU/master/adobe-air_amd64.deb
 
 ##### [skrypt] #####################
@@ -41,7 +40,7 @@ EOF
 echo "Czekam na Twoją decyzję...."
 sudo ./apt_install.sh ${USERNAME}
 sudo ./pip3_install.sh
-sudo ./lang_setup.sh
+
 
 U=`id -un`
 echo "Wracam do mojego usera: ${U}"

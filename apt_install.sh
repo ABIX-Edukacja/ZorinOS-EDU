@@ -10,6 +10,13 @@ apt install -y chromium-browser*
 apt install -y libqt4-dev-bin libcanberra-gtk3-module libcanberra-gtk0 git ar dpkg idle-python3.6
 apt install -y dosemu mp3check cdparanoia aac-enc faac cd-discid
 apt install -y python3-dev python-dev hplip-data hplip-gui
+# ustawienie language
+apt-get remove -y language-pack-ar* language-pack-de* language-pack-es* language-pack-fr* language-pack-it* language-pack-ja* language-pack-pt* language-pack-ru* language-pack-zh*
+apt-get remove -y language-pack-gnome-ar* language-pack-gnome-de* language-pack-gnome-es* language-pack-gnome-fr* language-pack-gnome-it* language-pack-gnome-ja* language-pack-gnome-pt* language-pack-gnome-ru* language-pack-gnome-zh*
+apt-get remove -y libreoffice-l10n-*
+apt-get install -y libreoffice-l10n-pl language-pack-gnome-pl* language-pack-pl*
+apt-get install -y myspell-dictionary-pl hyphen-pl  libreoffice-help-pl mythes-pl
+
 
 
 # Scratch 2 Adobe Air
@@ -38,3 +45,6 @@ chmod +r Scratch_2 -R
 tar xzvf "${D}/_ab.tgz"
 chown root.root angrybirds -R
 chmod +r angrybirds -R
+
+# aktualizacja całego systemu - pytanie do usera....
+apt-get upgrade
